@@ -1,7 +1,7 @@
 # Conteúdo
 
-[] - context with cancel
+[x] - context with cancel
 [] - context with deadline
 [] - context with timeout
 [] - context with value
-[] - select
+[x] - select

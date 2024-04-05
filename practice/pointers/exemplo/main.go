@@ -14,17 +14,22 @@ func (p *Pessoa) SetNome(nome string) {
 	p.Nome = nome
 }
 
-func newPessoa(nome string) *Pessoa {
+// 3 formas de se trabalhar com uma struct de pessoas
+// []Pessoa
+// []*Pessoa
+// *[]Pessoa
+
+func newPessoa(nome string) Pessoa {
 	// criando uma variável pessoa
 	pessoa := Pessoa{
 		Nome: nome,
 	}
 
 	// retornando apenas o endereço de memória de pessoa
-	return &pessoa
+	return pessoa
 }
 
-func main2() {
+func main() {
 
 	// criando uma variável do tipo int
 	var idade int = 45
@@ -57,14 +62,3 @@ func main2() {
 	p1.SetNome("Ciclano")
 	fmt.Println(p1)
 }
-
-// client, err := newClient()
-// if err != nil {
-//   log.Fatal("não foi possível iniciar o client %w", err)
-// }
-
-// client.Subscribe("algumacoisa")
-
-// // null pointer exception
-// // cannot read properties of undefined
-// nil.Subscribe
