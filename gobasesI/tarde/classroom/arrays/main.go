@@ -1,9 +1,11 @@
 package main
 
-func main(){
+import "fmt"
+
+func main() {
 	//Arrays
 
-    //declaração de um array.  
+	//declaração de um array.
 	//[tamanho do array] tipo dos valores do array
 	var alunos [2]string
 
